@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Leo Neil Abadano </title>
+<body>
+<style>
+.block-menu {
+	display: block;
+	background: #3A3939;
+}
+
+.block-menu li {
+	display: inline-block;
+}
+
+.block-menu li a {
+	
+	display: block;
+	text-decoration: none;
+	font-family: impact;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 20px;
+	padding: 15px 10px;
+}
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #64CCFD;
+	padding: 15px 10px;
+	color: black;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+body{
+background: url('a.gif') no-repeat;
+background-size:cover;
+}
+</style>
+<center>
+<ul class="block-menu">
+	<li><a href="profile1.html" class="three-d">
+		Me 
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">Me	-</span>
+			<span class="back">Me	-</span>
+		</span>
+	</a></li>
+	<li><a href="friends.html" class="three-d">
+		Friends
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">Friends	-</span>
+			<span class="back">Friends	-</span>
+		</span>
+	</a></li>
+	<li><a href="hobbies.html" class="three-d">
+		Hobbies
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">Hobbies	-</span>
+			<span class="back">Hobbies	-</span>
+		</span>
+	</a></li>
+	<li><a href="Favorites.html" class="three-d">
+		Favorites
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">Favorites	-</span>
+			<span class="back">Favorites 	-</span>
+		</span>
+	</a></li>
+	<li><a href="goals.html" class="three-d">
+		Goals
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">Goals	-</span>
+			<span class="back">Goals	-</span>
+		</span>
+	</a></li>
+	<li><a href="https://www.youtube.com/channel/UCu6uV5ggeQ9SDHv3HuDFaqA?view_as=subscriber" class="three-d">
+		My youtube channel
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">My youtube channel	-</span>
+			<span class="back">My youtube channel	-</span>
+		</span>
+	</a></li>
+	<li><a href="http://www.rvmonline.net/ndrvmcc/" class="three-d">
+		NDRVMCC website
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">NDRVMCC website	-</span>
+			<span class="back">NDRVMCC website	-</span>
+		</span>
+	</a></li>
+	<li><a href="contact.html" class="three-d">
+		Contacts
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">Contacts	-</span>
+			<span class="back">Contacts	-</span>
+		</span>
+	</a></li>
+	</center>
+</ul>
+</body>
+</html>
